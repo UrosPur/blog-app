@@ -8,14 +8,14 @@
                         <label for="title" class="col-4 col-form-label">Title</label>
                         <div class="col-8">
                             <input v-model="post.title" id="title" name="title" placeholder="add post title" type="text"
-                                   class="form-control here">
+                                   class="form-control here" required minlength="2">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="text" class="col-4 col-form-label">text</label>
                         <div class="col-8">
                             <input v-model="post.text" id="text" name="text" placeholder="add post content" type="text"
-                                   class="form-control here">
+                                   class="form-control here" required maxlength="300">
                         </div>
                     </div>
                     <div class="form-group row">
