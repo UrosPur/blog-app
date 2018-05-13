@@ -9,9 +9,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <!--<li class="nav-item active">-->
-                    <!--&lt;!&ndash;<router-link class="nav-link" to=""></router-link>&ndash;&gt;-->
-                <!--</li>-->
+                <li class="nav-item active">
+                    <router-link class="nav-link" :to="{ name:'add-post'}">Add post</router-link>
+                </li>
             </ul>
         </div>
     </nav>

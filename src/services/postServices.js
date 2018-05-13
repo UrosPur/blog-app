@@ -19,6 +19,14 @@ export default class postServices {
 
     }
 
+    add(value){
+
+
+        // console.log(value)
+
+        return axios.post('posts',value)
+    }
+
 
 }
 
