@@ -7,7 +7,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
                 <th scope="col">Text</th>
-                <th scope="col">Action</th>
+                <th scope="col">Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -17,7 +17,9 @@
                 <td>{{ post.title}}</td>
                 <td>{{ post.text.slice(0,15)}}...</td>
                 <td>
-                    <router-link :to="{ name:'single-post', params:{id:post.id}}">View post</router-link>
+                    <router-link type="button" class="btn btn-secondary" :to="{ name:'single-post', params:{id:post.id}}">View post</router-link>
+                    <router-link type="button" class="btn btn-primary" :to="{ name:'edit-post', params:{id:post.id}}">Edit post</router-link>
+                    <button name="button" type="button" class="btn btn-danger">delete</button>
                 </td>
             </tr>
             </tbody>

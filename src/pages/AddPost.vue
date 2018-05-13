@@ -37,6 +37,21 @@
     export default {
         name: "AddPost",
 
+        created() {
+
+            if (this.$route.params.id) {
+
+                postServ.get(this.$route.params.id)
+                    .then((response) => {
+
+                        this.post = response.data
+
+                    })
+
+            }
+
+        },
+
         data() {
             return {
 
@@ -54,9 +69,21 @@
 
             addPost() {
 
-                postServ.add(this.post)
 
-                this.$router.push('/posts');
+                if (this.$route.params.id) {
+
+                    postServ.edit(this.post)
+
+                    this.$router.push('/posts');
+
+
+                } else {
+
+                    postServ.add(this.post)
+                    this.$router.push('/posts');
+
+
+                }
 
 
             }

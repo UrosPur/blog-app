@@ -27,6 +27,11 @@ export default class postServices {
         return axios.post('posts',value)
     }
 
+    edit (post) {
+        // console.log(post)
+        return axios.put(`posts/${post.id}`, post)
+    }
+
 
 }
 
