@@ -21,6 +21,7 @@
                     <div class="form-group row">
                         <div class="offset-4 col-8">
                             <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                            <button name="button" type="reset" class="btn btn-danger">reset form</button>
                         </div>
                     </div>
                 </form>
