@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+// import VueMoment from 'vue-moment'
 import AppPosts from './pages/AppPosts.vue'
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+// Vue.use(require('vue-moment'));
 
 
 const routes = [
@@ -14,7 +16,6 @@ const routes = [
     {path: '/posts', component: AppPosts, name: 'posts'}
 
 ]
-
 
 const router = new VueRouter({
 

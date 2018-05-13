@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/hero-home.jpg">-->
     <nav-bar></nav-bar>
+<router-view></router-view>
+
   </div>
 </template>
 
@@ -17,5 +18,3 @@ export default {
 }
 </script>
 
-<style>
-</style>
