@@ -32,6 +32,10 @@ export default class postServices {
         return axios.put(`posts/${post.id}`, post)
     }
 
+    remove (id) {
+        return axios.delete(`posts/${id}`)
+    }
+
 
 }
 
