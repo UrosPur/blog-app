@@ -1,5 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
                     <router-link class="navbar-brand" to="/"> Posts</router-link>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -25,3 +26,5 @@
 <style scoped>
 
 </style>
+
+
